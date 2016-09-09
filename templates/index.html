@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/{{ helper.asset('styles.css') }}">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-2">Description simulator</h1>
+        <p class="subtitle">Simulate what you would see in the Google page.</p>
+        <div class="content">
+          <form>
+            <div class="columns">
+              <div class="column is-half">
+                <label for="title" class="label">Title</label>
+                <p class="control">
+                  <input type="text" id="title" class="input" value="Site title" required>
+                </p>
+              </div>
+              <div class="column is-half">
+                <label for="url" class="label">URL</label>
+                <p class="control">
+                  <input type="text" id="url" class="input" value="http://example.com" required>
+                </p>
+              </div>
+            </div>
+            <label for="description" class="label">Description</label>
+            <p class="control">
+              <textarea name="description" id="description" class="textarea" required></textarea>
+            </p>
+          </form>
+          <h2 class="is-4">Result</h2>
+          <div class="area-google-pc">
+            <h3 class="area-google-pc__title">Site title</h3>
+            <div class="area-google-pc__url">http://example.com</div>
+            <div class="area-google-pc__description">
+            </div>
+          </div>
+          <div class="area-google-mobile">
+            <div class="area-google-mobile-card">
+              <div class="area-google-mobile-card__header">
+                <h3 class="area-google-mobile__title">Site title</h3>
+                <div class="area-google-mobile__url">http://example.com</div>
+              </div>
+              <div class="area-google-mobile__description">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        &copy; 10mado, LLC
+      </div>
+    </div>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery/dist/{{ helper.asset('jquery.min.js') }}"><\/script>');</script>
+  <script src="js/{{ helper.asset('app.js') }}"></script>
+</body>
+</html>

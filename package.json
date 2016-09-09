@@ -1,0 +1,24 @@
+{
+  "name": "description-simulator",
+  "version": "0.0.1",
+  "engines": {
+    "node": "4.x"
+  },
+  "author": "Hiroyuki Yamaoka",
+  "devDependencies": {
+    "bulma": "^0.1.2",
+    "crypto": "0.0.3",
+    "fs": "0.0.2",
+    "glob": "^7.0.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-webserver": "^0.9.1",
+    "jquery": "^3.1.0",
+    "nunjucks": "^2.5.0",
+    "path": "^0.12.7",
+    "sass-module-importer": "^1.2.1"
+  }
+}

@@ -1,0 +1,86 @@
+body {
+  color: #222;
+}
+
+.area-google-pc {
+  width: 512px;
+  font-family: arial, sans-serif;
+  line-height: 1.6;
+}
+
+.content h3.area-google-pc__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #1a0dab;
+}
+
+.area-google-pc__url {
+  position: relative;
+  display: inline-block;
+  height: 21px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #006621;
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -12px;
+    font-family: FontAwesome;
+    content: "\f0d7";
+  }
+}
+
+.area-google-pc__description {
+  font-size: small;
+  line-height: 1.4;
+  color: #545454;
+  word-wrap: break-word;
+}
+
+.area-google-mobile {
+  width: 375px;
+  padding: 8px;
+  margin-top: 40px;
+  font-family: arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+}
+
+.area-google-mobile-card {
+  padding: 11px 16px 11px 16px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.area-google-mobile-card__header {
+  border-bottom: 1px solid #ebebeb;
+  line-height: 20px;
+  margin: 2px -16px 9px -16px;
+  padding: 0 16px 11px 16px
+}
+
+.content h3.area-google-mobile__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #1a0dab;
+}
+
+.area-google-mobile__url {
+  height: 21px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #006621;
+}
+
+.area-google-mobile__description {
+  font-size: 14px;
+  font-family: Roboto-Regular, HelveticaNeue, Arial, sans-serif;
+  line-height: 20px;
+  color: #545454;
+  word-wrap: break-word;
+}
