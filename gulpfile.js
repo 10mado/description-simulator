@@ -20,7 +20,7 @@ const paths = {
   assets: ['docs/**/*.css', 'docs/**/*.js'],
 };
 
-const calcAssetHash = function() {
+const calcAssetHash = () => {
   let result = {};
   for (let i = 0; i < paths.assets.length; i++) {
     let files = glob.sync(paths.assets[i]);
@@ -65,9 +65,9 @@ gulp.task('js', () => {
 
 gulp.task('compile-template', () => {
   let assetHash = calcAssetHash();
-  let manageEnv = function(env) {
+  let manageEnv = (env) => {
     env.addGlobal('helper', {
-      asset: function(file) {
+      asset: (file) => {
         if (file in assetHash) {
           return file + '?v=' + assetHash[file].substring(0, 10);
         }
